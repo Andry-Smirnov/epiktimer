@@ -67,9 +67,12 @@ interface
 
 uses
 {$IFDEF Windows}
-  Windows, MMSystem,
+  Windows,
+  MMSystem,
 {$ELSE}
-  unix, unixutil, baseunix,
+  unix,
+  unixutil,
+  baseunix,
   {$IFDEF LINUX}
   Linux,  // for clock_gettime() access
   {$ENDIF}
@@ -77,9 +80,11 @@ uses
   FreeBSD,  // for clock_gettime() access
   {$ENDIF}
 {$ENDIF}
-  Classes, SysUtils, dateutils;
+  Classes,
+  SysUtils,
+  dateutils;
 
-Const
+const
   DefaultSystemTicksPerSecond = 1000000; //Divisor for microsecond resolution
   { HW Tick frequency falls back to gated measurement if the initial system
     clock measurement is outside this range plus or minus.}
@@ -170,7 +175,7 @@ type
   // with every call adds a small amount of overhead... and after the first few
   // minutes of operation, there won't be very much correcting to do!
 
-  CorrelationModes=(Manual, OnTimebaseSelect, OnGetElapsed);
+  CorrelationModes = (Manual, OnTimebaseSelect, OnGetElapsed);
 
   (* * * * * * * * * * * Timer Data record structure  * * * * * * * * * * *)
 
