@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <Name Value="etpackage_dsgn"/>
+    <Type Value="DesignTime"/>
     <AddToProjectUsesSection Value="True"/>
     <Author Value="Tom Lisjac &lt;netdxr@gmail.com>"/>
     <CompilerOptions>
@@ -10,14 +11,6 @@
         <OtherUnitFiles Value="$(LazarusDir)/lcl/units"/>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
-      <Parsing>
-        <SyntaxOptions>
-          <UseAnsiStrings Value="False"/>
-        </SyntaxOptions>
-      </Parsing>
-      <Other>
-        <CompilerPath Value="$(CompPath)"/>
-      </Other>
     </CompilerOptions>
     <Description Value="EpikTimer elapsed time component
   http://wiki.lazarus.freepascal.org/EpikTimer
@@ -37,7 +30,7 @@
         <UnitName Value="etpackage_lcl"/>
       </Item2>
     </Files>
-    <Type Value="DesignTime"/>
+    <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="2">
       <Item1>
         <PackageName Value="etpackage"/>
@@ -52,7 +45,6 @@
     </UsageOptions>
     <PublishOptions>
       <Version Value="2"/>
-      <IgnoreBinaries Value="False"/>
     </PublishOptions>
   </Package>
 </CONFIG>

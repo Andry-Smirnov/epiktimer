@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <Name Value="etpackage"/>
     <Author Value="Tom Lisjac &lt;netdxr@gmail.com>"/>
     <CompilerOptions>
@@ -8,11 +8,6 @@
       <SearchPaths>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
-      <Parsing>
-        <SyntaxOptions>
-          <UseAnsiStrings Value="False"/>
-        </SyntaxOptions>
-      </Parsing>
     </CompilerOptions>
     <Description Value="EpikTimer elapsed time component
 http://wiki.lazarus.freepascal.org/EpikTimer
@@ -26,6 +21,7 @@ http://wiki.lazarus.freepascal.org/EpikTimer
         <UnitName Value="EpikTimer"/>
       </Item1>
     </Files>
+    <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="1">
       <Item1>
         <PackageName Value="FCL"/>
@@ -37,7 +33,6 @@ http://wiki.lazarus.freepascal.org/EpikTimer
     </UsageOptions>
     <PublishOptions>
       <Version Value="2"/>
-      <IgnoreBinaries Value="False"/>
     </PublishOptions>
   </Package>
 </CONFIG>
